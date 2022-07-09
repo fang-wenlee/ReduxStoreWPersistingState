@@ -1,2 +1,2 @@
-# ReduxStoreWPersistingState
+# CounterWithRedux
 Created with CodeSandbox
