@@ -15,6 +15,9 @@ const reducers = combineReducers({
 });
 const persistedReducer = persistReducer(persistConfig, reducers);
 
-const store = createStore(persistedReducer);
+const store = createStore(
+  persistedReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 export default store;
